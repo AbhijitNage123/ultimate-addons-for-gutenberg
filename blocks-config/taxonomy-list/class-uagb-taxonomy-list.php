@@ -535,7 +535,7 @@ if ( ! class_exists( 'UAGB_Taxonomy_List' ) ) {
 			$seperatorStyle   = $attributes['seperatorStyle'];
 			$noTaxDisplaytext = $attributes['noTaxDisplaytext'];
 			$showCount        = $attributes['showCount'];
-			$titleTag         = $attributes['titleTag'];
+			$titleTag         = sanitize_key( $attributes['titleTag'] );
 
 			if ( 'grid' === $layout ) {
 
@@ -610,7 +610,7 @@ if ( ! class_exists( 'UAGB_Taxonomy_List' ) ) {
 			$seperatorStyle   = $attributes['seperatorStyle'];
 			$noTaxDisplaytext = $attributes['noTaxDisplaytext'];
 			$showCount        = $attributes['showCount'];
-			$titleTag         = $attributes['titleTag'];
+			$titleTag         = sanitize_key( $attributes['titleTag'] );
 
 			if ( 'list' === $layout ) {
 
