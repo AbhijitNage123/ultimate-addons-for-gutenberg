@@ -1416,7 +1416,7 @@ if ( ! class_exists( 'UAGB_Helper' ) ) {
 		 * @return string $allowed_title_tag.
 		 */
 		public static function title_tag_allowed_HTML( $title_Tag, $allowed_array, $default_tag ) {
-			return $allowed_title_tag = in_array( $title_Tag, $allowed_array, true ) ? $title_Tag : $default_tag;
+			return in_array( $title_Tag, $allowed_array, true ) ? $title_Tag : $default_tag;
 		}
 	}
 
