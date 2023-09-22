@@ -1405,6 +1405,19 @@ if ( ! class_exists( 'UAGB_Helper' ) ) {
 			}
 			return $align_css;
 		}
+
+		/**
+		 * Get allowed HTML title tag.
+		 *
+		 * @param string $title_Tag
+		 * @param array $allowed_array
+		 * @param string $default_tag
+		 * @since x.x.x
+		 * @return string $title_Tag | $default_tag.
+		 */
+		public static function title_tag_allowed_HTML( $title_Tag, $allowed_array, $default_tag ) {
+			return in_array( $title_Tag, $allowed_array, true ) ? sanitize_key( $title_Tag ) : $default_tag;
+		}
 	}
 
 	/**
